@@ -24,9 +24,10 @@ header {
 	margin: 10px 0 0 0;
 }
 
-header h1 {
-	position: absolute;
-	left: -9999px;
+h1 {
+	padding: 30px;
+	color: white;
+	text-align: center;
 }
 /* END HEADER */
 
@@ -99,6 +100,11 @@ footer {
 	color: #FFF;
 	clear: left;
 	padding: 10px 20px 10px 20px;
+}
+
+#copyright {
+	font-size: 70%;
+	font-style: italic;
 }
 /* END FOOTER */
 
