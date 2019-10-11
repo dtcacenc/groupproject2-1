@@ -1,1 +1,108 @@
+body {
+	background: #444;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+}
 
+#wrapper {
+	background-color: #FFF;
+	box-shadow: 5px 5px 5px 2px;
+	min-width: 900px;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+/* HEADER */
+header {
+	background-size: 130% 100%;
+	background-position: -125px 0;
+	background-repeat: none;
+	background-color: #056;
+	height: 150px;
+	width: auto;
+	margin: 10px 0 0 0;
+}
+
+header h1 {
+	position: absolute;
+	left: -9999px;
+}
+/* END HEADER */
+
+/* HEADINGSPACER */
+#headingspacer {
+	width: 100%;
+	height: 15px;
+	background: #009EC2;
+}
+
+/* DESKTOP NAV */
+#desktopnav {
+	background: #CCC;
+	width: 190px;
+	float: left;
+	min-height: 500px;
+	box-shadow: 2px 0 5px 0 rgba(0, 0, 0, .5);
+}
+
+#desktopnav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#desktopnav a {
+	text-decoration: none;
+	display: block;
+	background-color: #CCC;
+	padding: 10px;
+	color: #000;
+}
+
+#desktopnav a:hover {
+	background-color: #AAA;
+	border: 1px solid #000;
+}
+
+#desktopnav li:hover .subnav {
+	display: block;
+	max-height: 300px;
+}
+
+#desktopnav .subnav a {
+	background-color: #BBB;
+}
+
+#desktopnav .subnav a:hover {
+	background-color: #AAA;
+}
+
+#desktopnav .subnav {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: all 0.5s ease-out;
+}
+/* END DESKTOP NAV */
+
+/* MAIN */
+main {
+	padding-left: 215px;
+	padding-right: 20px;
+	font-size: 90%;
+}
+/* END MAIN */
+
+/* FOOTER */
+footer {
+	background: #009EC2;
+	color: #FFF;
+	clear: left;
+	padding: 10px 20px 10px 20px;
+}
+/* END FOOTER */
+
+/* Other Devices */
+@media only screen and (max-width: 900px) {
+	
+}
