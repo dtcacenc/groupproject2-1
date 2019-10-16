@@ -5,9 +5,11 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body onload="eval();nextQuestion()">
+<script src="scripts.js"></script>
 	<header>
-		<h1>Model-View-Controller Project</h1>
+		<h1>Which is greater?</h1>
 	</header>
 	<nav>
 		<ul>
@@ -32,18 +34,21 @@
 		</ul>
 	</nav>
 	<main>
-		<div id="next-noun">
-			<h2 class="subject" id="next-subject">Example Next</h2>
-		</div>
 		<div id="right-noun">
-			<h2 class="subject" id="right-subject">Example Right</h2>
+			<h2 class="subject" id="right-subject" ></h2>
+			<button id="right-button"
+					onClick="eval(document.getElementById('right-button').attribute)">This one's greater!</button>
+			<button id="next-question" onClick="nextQuestion()" >Next Question</button>
+			<h2 class="subject" id="score"></h2>
 		</div>
 		<div id="left-noun">
-			<h2 class="subject" id="left-subject">Example Left</h2>
+			<h2 class="subject" id="left-subject"></h2>
+			<button id="left-button"
+					onClick="eval(document.getElementById('left-button').attribute)">This one's greater!</button>
 		</div>
 	</main>
 	<footer>
-		<p id="copyright">Copyright &copy; 2019. All rights reserved.</p>
+		<p id="copyright">GitHell &copy; 2019. All rights reserved.</p>
 	</footer>
 </body>
 </html>
